@@ -1,8 +1,8 @@
 import { UserInfo } from '../UserInfo/UserInfo';
 import { CommentList } from '../CommentList/CommentList';
 
-export const PostInfo = ({ post }) => {
-  const { title, body, user, comments = [] } = post || {};
+export const PostInfo = ({ post, user, comments = [] }) => {
+  const { title, body } = post;
 
   return (
     <div className="PostInfo">
